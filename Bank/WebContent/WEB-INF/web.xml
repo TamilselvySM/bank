@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Bank</display-name>
+  <servlet>
+    <description></description>
+    <display-name>AddUser</display-name>
+    <servlet-name>AddUser</servlet-name>
+    <servlet-class>com.bank.controller.CreateAccountController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddUser</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FetchAccountDetails</display-name>
+    <servlet-name>FetchAccountDetails</servlet-name>
+    <servlet-class>com.bank.controller.FetchAccountDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchAccountDetails</servlet-name>
+    <url-pattern>/FetchAccountDetails</url-pattern>
+  </servlet-mapping>
+</web-app>
